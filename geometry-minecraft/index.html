@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>three.js webgl - geometry - minecraft</title>
+		<title>Proyectos Three.js</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="../css/styles.css">
+		<link type="text/css" rel="stylesheet" href="./css/main.css">
 		<style>
-			body {
-				background-color: #bfd1e5;
-				color: #61443e;
+			#info {
+				text-align: center;
+				padding: 20px;
+				background-color: #222;
+				color: #eee;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			}
-			a {
-				color: #a06851;
+			nav ul {
+				list-style: none;
+				padding: 0;
+				margin: 10px 0 0 0;
+			}
+			nav li {
+				display: inline-block;
+				margin: 0 15px;
+			}
+			nav a {
+				color: #00ffea;
+				text-decoration: none;
+				font-size: 18px;
+				transition: color 0.3s;
+			}
+			nav a:hover {
+				color: #ff4081;
 			}
 		</style>
 	</head>
 	<body>
-
+		<div id="info">
+			<h1>Mis Prácticas de Three.js</h1>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Inicio - FBX Loader</a></li>
+					<li><a href="../geometry-minecraft/index.html">Geometry Minecraft</a></li>
+					<li><a href="../controls-map/index.html">Controls Map</a></li>
+					<li><a href="../controls-orbit/index.html">Controls Orbit</a></li>
+					<li><a href="../controls-pointerlock/index.html">Controls PointerLock</a></li>
+				</ul>
+			</nav>
+		</div>
 		<div id="container"></div>
 		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - <a href="http://www.minecraft.net/" target="_blank" rel="noopener">minecraft</a> demo. featuring <a href="http://painterlypack.net/" target="_blank" rel="noopener">painterly pack</a><br />(left click: forward, right click: backward)</div>
 

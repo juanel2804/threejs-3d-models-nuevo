@@ -112,6 +112,13 @@ function loadAsset(asset) {
         }
 
         object = group;
+
+        object.traverse(function (child) {
+            if (child.isMesh) {
+                child.material.color.set(0x00ff00); // Aquí pones el color que quieras (verde en este ejemplo)
+            }
+        });
+        
         
         // Centrar el modelo en una posición específica
         object.position.set(0, 0, -250);  // Mueve el modelo a (X=0, Y=50, Z=0)
